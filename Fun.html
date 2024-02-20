@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Effect</title>
+    <style>
+       body{
+        /* background-image: url(); */
+        background-color: black;
+        color:whitesmoke;
+        font-size: 30px;
+       }
+      h3 {
+        color: rgb(211, 217, 224);
+        font-weight: bold;
+        font-style: italic;
+        display: inline-block;
+        border: 1px rgb(30, 30, 34) solid;
+        box-shadow: 2px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border:1px solid rgb(237, 237, 243);
+        border-radius: 8px;
+        body{
+            background-color: #0e0f0b;
+        }
+        float: right;
+      }
+      p {
+        color: rgb(230, 232, 237);
+
+
+      }
+      button{
+        background-color: #e4e8ec;
+        border: 3px rgb(193, 193, 246) solid;
+        padding: 8px;
+        width: 200px;
+        font-size: 25px;
+        color:rgb(108, 155, 197);
+        border-radius: 20px;
+        cursor: pointer;
+        margin:auto 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="h">why are you worry ?</h3>
+
+    <img
+      src="https://t4.ftcdn.net/jpg/01/80/98/09/360_F_180980941_s5F5DsVVYie35lVTCGJHKT8ZF18weWRN.jpg "
+      id="img"
+      alt="smiley"
+    />
+
+    <p id="para">I have something for you .....
+      if you want to see click on below button
+    </p>
+    <button onclick="fun()">Click Me</button>
+    <script>
+      function fun() {
+        document.getElementById("img").src =
+          "https://www.clipartmax.com/png/middle/113-1137375_emoji-stickers-smileys-smiley-faces-happy-face-emoticon-s%C3%BC%C3%9Fer-smiley.png";
+          document.getElementById("h").innerHTML="KHUSH HO JAO Bhai "
+          document.getElementById("para").innerHTML="Be happy for this moment. This moment is your life."
+
+      }
+    </script>
+  </body>
+</html>
